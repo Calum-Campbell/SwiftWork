@@ -16,11 +16,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRT-kD-xjD">
+                                <rect key="frame" x="226" y="413" width="149" height="132"/>
+                                <state key="normal" title="Join The Project"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dementia Citizens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-Zl-hbd">
+                                <rect key="frame" x="226" y="14" width="147" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YRT-kD-xjD" secondAttribute="bottom" constant="55" id="Agk-EB-AcI"/>
+                            <constraint firstItem="eAw-Zl-hbd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="U7O-LI-1qr"/>
+                            <constraint firstItem="YRT-kD-xjD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WHk-wx-ugh"/>
+                            <constraint firstItem="eAw-Zl-hbd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="imM-r6-HPe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="306"/>
         </scene>
     </scenes>
 </document>
