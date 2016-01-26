@@ -308,5 +308,95 @@
             </objects>
             <point key="canvasLocation" x="245" y="306"/>
         </scene>
+        <!--Your Consent-->
+        <scene sceneID="UGO-pB-ig5">
+            <objects>
+                <viewController title="Your Consent" id="ZwX-3g-udC" customClass="ViewControllerConsent" customModule="Dementia_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zfH-tZ-zqC"/>
+                        <viewControllerLayoutGuide type="bottom" id="o0s-N6-OeV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ebY-9A-ae2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MP-hy-97A">
+                                <rect key="frame" x="284" y="570" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="ysX-MC-sb8" kind="show" id="Qeg-cB-bNG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0MP-hy-97A" firstAttribute="centerX" secondItem="ebY-9A-ae2" secondAttribute="centerX" id="HHV-OW-ElN"/>
+                            <constraint firstItem="o0s-N6-OeV" firstAttribute="top" secondItem="0MP-hy-97A" secondAttribute="bottom" id="sx3-aR-5u1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jn5-zk-dS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3931" y="-334"/>
+        </scene>
+        <!--Adding Personal Details-->
+        <scene sceneID="B79-Fd-rKv">
+            <objects>
+                <viewController title="Adding Personal Details" id="ysX-MC-sb8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MlV-SJ-vWj"/>
+                        <viewControllerLayoutGuide type="bottom" id="vZP-Sa-HmS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Heq-xE-tdl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUp-pP-KHT">
+                                <rect key="frame" x="284" y="570" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="HnV-cM-Oo8" kind="show" id="ks3-Lx-GA6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vZP-Sa-HmS" firstAttribute="top" secondItem="jUp-pP-KHT" secondAttribute="bottom" id="LLw-3U-6oB"/>
+                            <constraint firstItem="jUp-pP-KHT" firstAttribute="centerX" secondItem="Heq-xE-tdl" secondAttribute="centerX" id="n9w-VZ-04S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bms-lC-y85" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3939" y="484"/>
+        </scene>
+        <!--Carer's Details-->
+        <scene sceneID="wRB-Fc-Qkf">
+            <objects>
+                <viewController title="Carer's Details" id="HnV-cM-Oo8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b95-Do-7jb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Geh-io-aib"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ape-jO-X52">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqE-aY-hy1">
+                                <rect key="frame" x="284" y="570" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UqE-aY-hy1" firstAttribute="centerX" secondItem="Ape-jO-X52" secondAttribute="centerX" id="Dug-oU-SBN"/>
+                            <constraint firstItem="Geh-io-aib" firstAttribute="top" secondItem="UqE-aY-hy1" secondAttribute="bottom" id="ia6-DP-Gcw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYv-8c-Ne5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4659" y="496"/>
+        </scene>
     </scenes>
 </document>
