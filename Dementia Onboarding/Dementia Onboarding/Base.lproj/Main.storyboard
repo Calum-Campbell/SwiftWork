@@ -17,26 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRT-kD-xjD">
-                                <rect key="frame" x="244" y="515" width="112" height="30"/>
-                                <state key="normal" title="Join The Project"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRT-kD-xjD">
+                                <rect key="frame" x="227" y="491" width="145" height="54"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.76078431369999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Join The Project">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="jUM-Aq-YwS" kind="show" id="kkB-wg-FmT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dementia Citizens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-Zl-hbd">
-                                <rect key="frame" x="231" y="64" width="139" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Dementia                                      Citizens" translatesAutoresizingMaskIntoConstraints="NO" id="KbL-lH-oZe">
+                                <rect key="frame" x="194" y="78" width="212" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.42553336199523223" green="0.43556358618484847" blue="0.43427703411573665" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YRT-kD-xjD" secondAttribute="bottom" constant="55" id="Agk-EB-AcI"/>
                             <constraint firstItem="YRT-kD-xjD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WHk-wx-ugh"/>
-                            <constraint firstItem="eAw-Zl-hbd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XpO-Uv-4Sc"/>
-                            <constraint firstItem="eAw-Zl-hbd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="imM-r6-HPe"/>
+                            <constraint firstItem="KbL-lH-oZe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMa-0k-P3w"/>
+                            <constraint firstItem="KbL-lH-oZe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nr2-d3-P4r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Yt8-Ku-ADW"/>
