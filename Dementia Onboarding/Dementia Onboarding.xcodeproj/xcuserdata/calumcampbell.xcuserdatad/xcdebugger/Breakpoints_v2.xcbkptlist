@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dementia Onboarding/CheckBox.swift"
+            timestampString = "475502703.542168"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "CheckBox"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dementia_Onboarding.CheckBox.init (Dementia_Onboarding.CheckBox.Type)(frame : __C.CGRect) -&gt; Dementia_Onboarding.CheckBox"
+                  moduleName = "Dementia Onboarding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/calumcampbell/development/Swift/SP+EE/Dementia%20Onboarding/Dementia%20Onboarding/CheckBox.swift"
+                  timestampString = "475503579.316504"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dementia_Onboarding.CheckBox.init (Dementia_Onboarding.CheckBox.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Dementia_Onboarding.CheckBox&gt;"
+                  moduleName = "Dementia Onboarding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/calumcampbell/development/Swift/SP+EE/Dementia%20Onboarding/Dementia%20Onboarding/CheckBox.swift"
+                  timestampString = "475503579.316668"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

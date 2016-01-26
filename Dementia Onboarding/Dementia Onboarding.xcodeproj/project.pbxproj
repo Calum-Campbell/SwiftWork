@@ -13,6 +13,7 @@
 		8A25891B1C56813C002B6CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A25891A1C56813C002B6CA5 /* Assets.xcassets */; };
 		8A25891E1C56813C002B6CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A25891C1C56813C002B6CA5 /* LaunchScreen.storyboard */; };
 		8A2589261C5794CA002B6CA5 /* ViewControllerConsent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2589251C5794CA002B6CA5 /* ViewControllerConsent.swift */; };
+		8A2589281C579801002B6CA5 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2589271C579801002B6CA5 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8A25891D1C56813C002B6CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A25891F1C56813C002B6CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A2589251C5794CA002B6CA5 /* ViewControllerConsent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerConsent.swift; sourceTree = "<group>"; };
+		8A2589271C579801002B6CA5 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				8A2589151C56813C002B6CA5 /* ViewController.swift */,
 				8A2589171C56813C002B6CA5 /* Main.storyboard */,
 				8A2589251C5794CA002B6CA5 /* ViewControllerConsent.swift */,
+				8A2589271C579801002B6CA5 /* CheckBox.swift */,
 				8A25891A1C56813C002B6CA5 /* Assets.xcassets */,
 				8A25891C1C56813C002B6CA5 /* LaunchScreen.storyboard */,
 				8A25891F1C56813C002B6CA5 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2589281C579801002B6CA5 /* CheckBox.swift in Sources */,
 				8A2589161C56813C002B6CA5 /* ViewController.swift in Sources */,
 				8A2589141C56813C002B6CA5 /* AppDelegate.swift in Sources */,
 				8A2589261C5794CA002B6CA5 /* ViewControllerConsent.swift in Sources */,
