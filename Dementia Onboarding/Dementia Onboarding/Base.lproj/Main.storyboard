@@ -277,6 +277,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDa-yt-0SA">
                                 <rect key="frame" x="284" y="570" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="ysX-MC-sb8" kind="show" id="UoB-ai-4R2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -288,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xxm-pY-M9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3931" y="-340"/>
+            <point key="canvasLocation" x="3947" y="-298"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RAu-6c-N7f">
@@ -307,37 +310,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HG3-x6-px7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="306"/>
-        </scene>
-        <!--Your Consent-->
-        <scene sceneID="UGO-pB-ig5">
-            <objects>
-                <viewController title="Your Consent" id="ZwX-3g-udC" customClass="ViewControllerConsent" customModule="Dementia_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zfH-tZ-zqC"/>
-                        <viewControllerLayoutGuide type="bottom" id="o0s-N6-OeV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ebY-9A-ae2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MP-hy-97A">
-                                <rect key="frame" x="284" y="570" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="ysX-MC-sb8" kind="show" id="Qeg-cB-bNG"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0MP-hy-97A" firstAttribute="centerX" secondItem="ebY-9A-ae2" secondAttribute="centerX" id="HHV-OW-ElN"/>
-                            <constraint firstItem="o0s-N6-OeV" firstAttribute="top" secondItem="0MP-hy-97A" secondAttribute="bottom" id="sx3-aR-5u1"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jn5-zk-dS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3931" y="-334"/>
         </scene>
         <!--Adding Personal Details-->
         <scene sceneID="B79-Fd-rKv">
@@ -373,7 +345,7 @@
         <!--Carer's Details-->
         <scene sceneID="wRB-Fc-Qkf">
             <objects>
-                <viewController title="Carer's Details" id="HnV-cM-Oo8" sceneMemberID="viewController">
+                <viewController title="Carer's Details" id="HnV-cM-Oo8" customClass="ViewController" customModule="Dementia_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b95-Do-7jb"/>
                         <viewControllerLayoutGuide type="bottom" id="Geh-io-aib"/>
@@ -386,13 +358,31 @@
                                 <rect key="frame" x="284" y="570" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your first name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDT-cQ-aWU">
+                                <rect key="frame" x="208" y="124" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tap to Type...." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v93-zd-rQM">
+                                <rect key="frame" x="155" y="196" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UqE-aY-hy1" firstAttribute="centerX" secondItem="Ape-jO-X52" secondAttribute="centerX" id="Dug-oU-SBN"/>
+                            <constraint firstItem="v93-zd-rQM" firstAttribute="centerX" secondItem="Ape-jO-X52" secondAttribute="centerX" id="Ggj-no-QRo"/>
+                            <constraint firstItem="yDT-cQ-aWU" firstAttribute="top" secondItem="b95-Do-7jb" secondAttribute="bottom" constant="60" id="i3l-Nd-Ymq"/>
                             <constraint firstItem="Geh-io-aib" firstAttribute="top" secondItem="UqE-aY-hy1" secondAttribute="bottom" id="ia6-DP-Gcw"/>
+                            <constraint firstItem="v93-zd-rQM" firstAttribute="top" secondItem="b95-Do-7jb" secondAttribute="bottom" constant="132" id="kRn-Ow-dVf"/>
+                            <constraint firstItem="yDT-cQ-aWU" firstAttribute="centerX" secondItem="Ape-jO-X52" secondAttribute="centerX" id="p7A-sv-w7p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carersName" destination="v93-zd-rQM" id="Gl3-NI-ZP7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYv-8c-Ne5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
