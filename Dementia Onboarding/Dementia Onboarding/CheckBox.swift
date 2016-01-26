@@ -1,32 +1,31 @@
-
 import UIKit
 
 class CheckBox: UIButton {
-    //images
-    let checkedImage = UIImage(named: "checked_checkbox")
-    let unCheckedImage = UIImage(named: "unchecked_checkbox")
+    // Images
+    let checkedImage = UIImage(named: "checked_checkbox")! as UIImage
+    let uncheckedImage = UIImage(named: "unchecked_checkbox")! as UIImage
     
     // Bool property
-    var isChecked:Bool = false{
+    var isChecked: Bool = false {
         didSet{
-            if isChecked == true{
+            if isChecked == true {
                 self.setImage(checkedImage, forState: .Normal)
-            }else{
-                self.setImage(unCheckedImage, forState: .Normal)
+            } else {
+                self.setImage(uncheckedImage, forState: .Normal)
             }
         }
     }
-
+    
     override func awakeFromNib() {
-        self.addTarget(self, action: "buttonClicked", forControlEvents: UIControlEvents.TouchUpInside)
+        self.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
         self.isChecked = false
     }
     
-    func buttonClicked(sender:UIButton){
-        if(sender == self){
-            if isChecked == true{
+    func buttonClicked(sender: UIButton) {
+        if sender == self {
+            if isChecked == true {
                 isChecked = false
-            }else{
+            } else {
                 isChecked = true
             }
         }

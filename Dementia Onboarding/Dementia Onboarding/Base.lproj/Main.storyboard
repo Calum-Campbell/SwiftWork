@@ -48,7 +48,7 @@
         <!--Before Starting-->
         <scene sceneID="e83-Ta-ehK">
             <objects>
-                <viewController title="Before Starting" id="jUM-Aq-YwS" sceneMemberID="viewController">
+                <viewController title="Before Starting" id="jUM-Aq-YwS" customClass="ViewController" customModule="Dementia_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9w8-bE-S7t"/>
                         <viewControllerLayoutGuide type="bottom" id="9Y4-QF-CLg"/>
@@ -58,17 +58,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG7-17-eSd">
-                                <rect key="frame" x="154" y="285" width="293" height="30"/>
-                                <state key="normal" title="We are a carer and a person with dementia"/>
+                                <rect key="frame" x="154" y="246" width="293" height="30"/>
+                                <color key="backgroundColor" red="0.45490196078431372" green="0.76078431372549016" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="We are a carer and a person with dementia">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.60045261790000004" green="1" blue="0.78334270189999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="v99-qW-dx9" kind="show" id="siJ-qA-t3w"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhL-Im-0Ww">
+                                <rect key="frame" x="154" y="159" width="293" height="30"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.76078431369999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="I am a person with dementia">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.60045261790000004" green="1" blue="0.78334270189999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dH4-1Z-tCS">
+                                <rect key="frame" x="154" y="335" width="293" height="30"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.76078431369999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="I am neither of these">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.60045261790000004" green="1" blue="0.78334270189999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="As this research project is focused on people and their carers can you tell us wether you are a person with dementia or a carer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pSN-eY-UxR">
+                                <rect key="frame" x="180" y="64" width="240" height="82"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="DVS-6f-dgb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bG7-17-eSd" firstAttribute="centerY" secondItem="m47-qj-iNT" secondAttribute="centerY" id="69A-Qf-tXX"/>
-                            <constraint firstItem="bG7-17-eSd" firstAttribute="centerX" secondItem="m47-qj-iNT" secondAttribute="centerX" id="cnN-CS-whR"/>
+                            <constraint firstItem="NhL-Im-0Ww" firstAttribute="centerX" secondItem="m47-qj-iNT" secondAttribute="centerX" id="Bnv-OM-76L"/>
+                            <constraint firstItem="pSN-eY-UxR" firstAttribute="top" secondItem="9w8-bE-S7t" secondAttribute="bottom" id="Gg0-C0-jyJ"/>
+                            <constraint firstItem="NhL-Im-0Ww" firstAttribute="top" secondItem="pSN-eY-UxR" secondAttribute="bottom" constant="13" id="HV0-SC-gga"/>
+                            <constraint firstItem="NhL-Im-0Ww" firstAttribute="top" secondItem="9w8-bE-S7t" secondAttribute="bottom" constant="95" id="TRW-7R-RJD"/>
+                            <constraint firstItem="dH4-1Z-tCS" firstAttribute="centerX" secondItem="m47-qj-iNT" secondAttribute="centerX" id="lEz-vw-hIy"/>
+                            <constraint firstItem="bG7-17-eSd" firstAttribute="centerX" secondItem="m47-qj-iNT" secondAttribute="centerX" id="nQg-Lk-gH7"/>
+                            <constraint firstItem="pSN-eY-UxR" firstAttribute="centerX" secondItem="m47-qj-iNT" secondAttribute="centerX" id="oGd-b9-ULq"/>
+                            <constraint firstItem="bG7-17-eSd" firstAttribute="top" secondItem="9w8-bE-S7t" secondAttribute="bottom" constant="182" id="rfe-zv-jg5"/>
+                            <constraint firstItem="dH4-1Z-tCS" firstAttribute="top" secondItem="9w8-bE-S7t" secondAttribute="bottom" constant="271" id="vpC-0o-B66"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -281,6 +317,12 @@
                                     <segue destination="ysX-MC-sb8" kind="show" id="UoB-ai-4R2"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VpS-QC-pa9">
+                                <rect key="frame" x="276" y="484" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchPressed:" destination="S43-Ma-YXc" eventType="valueChanged" id="4pE-5S-0iP"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -288,10 +330,14 @@
                             <constraint firstItem="5Xn-eh-4L1" firstAttribute="top" secondItem="LDa-yt-0SA" secondAttribute="bottom" id="aBn-sm-J6Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextConsent" destination="LDa-yt-0SA" id="Hr7-SM-5TD"/>
+                        <outlet property="switchButton" destination="VpS-QC-pa9" id="CMp-Us-HNe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xxm-pY-M9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3947" y="-298"/>
+            <point key="canvasLocation" x="3933" y="-340"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RAu-6c-N7f">
@@ -390,34 +436,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYv-8c-Ne5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4659" y="496"/>
-        </scene>
-        <!--Your Consent-->
-        <scene sceneID="3jE-qM-TKR">
-            <objects>
-                <viewController title="Your Consent" id="Gkq-hv-NP6" customClass="ViewControllerConsent" customModule="Dementia_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="b5b-PH-MJX"/>
-                        <viewControllerLayoutGuide type="bottom" id="t4X-H2-9YA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="C62-NH-q46">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYm-rY-bdM">
-                                <rect key="frame" x="284" y="570" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="t4X-H2-9YA" firstAttribute="top" secondItem="nYm-rY-bdM" secondAttribute="bottom" id="Rt0-hk-yHq"/>
-                            <constraint firstItem="nYm-rY-bdM" firstAttribute="centerX" secondItem="C62-NH-q46" secondAttribute="centerX" id="XmH-mh-k8A"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OxR-hb-8Eo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3955" y="-308"/>
         </scene>
         <!--Carer's Details-->
         <scene sceneID="OSr-B0-Z6V">
