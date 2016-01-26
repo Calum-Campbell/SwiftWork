@@ -17,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRT-kD-xjD">
-                                <rect key="frame" x="226" y="413" width="149" height="132"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRT-kD-xjD">
+                                <rect key="frame" x="244" y="515" width="112" height="30"/>
                                 <state key="normal" title="Join The Project"/>
                                 <connections>
                                     <segue destination="jUM-Aq-YwS" kind="show" id="kkB-wg-FmT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dementia Citizens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-Zl-hbd">
-                                <rect key="frame" x="226" y="14" width="147" height="120"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dementia Citizens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-Zl-hbd">
+                                <rect key="frame" x="230" y="14" width="139" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,10 +62,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG7-17-eSd">
+                                <rect key="frame" x="154" y="285" width="293" height="30"/>
+                                <state key="normal" title="We are a carer and a person with dementia"/>
+                                <connections>
+                                    <segue destination="v99-qW-dx9" kind="show" id="siJ-qA-t3w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bG7-17-eSd" firstAttribute="centerY" secondItem="m47-qj-iNT" secondAttribute="centerY" id="69A-Qf-tXX"/>
                             <constraint firstItem="QOO-5v-PDl" firstAttribute="top" secondItem="9w8-bE-S7t" secondAttribute="bottom" id="ATC-X4-LRn"/>
+                            <constraint firstItem="bG7-17-eSd" firstAttribute="centerX" secondItem="m47-qj-iNT" secondAttribute="centerX" id="cnN-CS-whR"/>
                             <constraint firstItem="QOO-5v-PDl" firstAttribute="centerX" secondItem="m47-qj-iNT" secondAttribute="centerX" id="j0G-vG-NVZ"/>
                         </constraints>
                     </view>
@@ -73,6 +82,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hF-B3-TPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="949" y="306"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lV8-Ph-LsH">
+            <objects>
+                <viewController id="v99-qW-dx9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hpp-kg-wYl"/>
+                        <viewControllerLayoutGuide type="bottom" id="0fk-6F-F4M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m2B-2H-IJX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you will do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSo-fw-l2e">
+                                <rect key="frame" x="237" y="28" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DSo-fw-l2e" firstAttribute="top" secondItem="hpp-kg-wYl" secondAttribute="bottom" constant="8" id="C7C-1m-jts"/>
+                            <constraint firstItem="DSo-fw-l2e" firstAttribute="centerX" secondItem="m2B-2H-IJX" secondAttribute="centerX" id="dCo-E5-IFK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="do7-u4-Bq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="306"/>
         </scene>
     </scenes>
 </document>
