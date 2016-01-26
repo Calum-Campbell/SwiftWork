@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dementia Citizens-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dementia_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dementia Citizens" id="BYZ-38-t0r" customClass="ViewController" customModule="Dementia_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,7 +24,7 @@
                                     <segue destination="jUM-Aq-YwS" kind="show" id="kkB-wg-FmT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Dementia Citizens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-Zl-hbd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dementia Citizens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-Zl-hbd">
                                 <rect key="frame" x="231" y="64" width="139" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -35,6 +35,7 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YRT-kD-xjD" secondAttribute="bottom" constant="55" id="Agk-EB-AcI"/>
                             <constraint firstItem="YRT-kD-xjD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WHk-wx-ugh"/>
+                            <constraint firstItem="eAw-Zl-hbd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XpO-Uv-4Sc"/>
                             <constraint firstItem="eAw-Zl-hbd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="imM-r6-HPe"/>
                         </constraints>
                     </view>
@@ -42,12 +43,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="306"/>
+            <point key="canvasLocation" x="961" y="510"/>
         </scene>
-        <!--View Controller-->
+        <!--Before Starting-->
         <scene sceneID="e83-Ta-ehK">
             <objects>
-                <viewController id="jUM-Aq-YwS" sceneMemberID="viewController">
+                <viewController title="Before Starting" id="jUM-Aq-YwS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9w8-bE-S7t"/>
                         <viewControllerLayoutGuide type="bottom" id="9Y4-QF-CLg"/>
@@ -56,12 +57,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Before Starting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOO-5v-PDl">
-                                <rect key="frame" x="242" y="20" width="116" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG7-17-eSd">
                                 <rect key="frame" x="154" y="285" width="293" height="30"/>
                                 <state key="normal" title="We are a carer and a person with dementia"/>
@@ -73,9 +68,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bG7-17-eSd" firstAttribute="centerY" secondItem="m47-qj-iNT" secondAttribute="centerY" id="69A-Qf-tXX"/>
-                            <constraint firstItem="QOO-5v-PDl" firstAttribute="top" secondItem="9w8-bE-S7t" secondAttribute="bottom" id="ATC-X4-LRn"/>
                             <constraint firstItem="bG7-17-eSd" firstAttribute="centerX" secondItem="m47-qj-iNT" secondAttribute="centerX" id="cnN-CS-whR"/>
-                            <constraint firstItem="QOO-5v-PDl" firstAttribute="centerX" secondItem="m47-qj-iNT" secondAttribute="centerX" id="j0G-vG-NVZ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -83,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="961" y="-382"/>
         </scene>
-        <!--View Controller-->
+        <!--What You Will Do Next-->
         <scene sceneID="lV8-Ph-LsH">
             <objects>
-                <viewController id="v99-qW-dx9" sceneMemberID="viewController">
+                <viewController title="What You Will Do Next" id="v99-qW-dx9" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hpp-kg-wYl"/>
                         <viewControllerLayoutGuide type="bottom" id="0fk-6F-F4M"/>
@@ -95,12 +88,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you will do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSo-fw-l2e">
-                                <rect key="frame" x="237" y="28" width="126" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z35-eS-CRQ">
                                 <rect key="frame" x="284" y="562" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -112,8 +99,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Z35-eS-CRQ" firstAttribute="centerX" secondItem="m2B-2H-IJX" secondAttribute="centerX" id="9I8-DA-p2A"/>
-                            <constraint firstItem="DSo-fw-l2e" firstAttribute="top" secondItem="hpp-kg-wYl" secondAttribute="bottom" constant="8" id="C7C-1m-jts"/>
-                            <constraint firstItem="DSo-fw-l2e" firstAttribute="centerX" secondItem="m2B-2H-IJX" secondAttribute="centerX" id="dCo-E5-IFK"/>
                             <constraint firstItem="0fk-6F-F4M" firstAttribute="top" secondItem="Z35-eS-CRQ" secondAttribute="bottom" constant="8" id="ddi-vL-2l1"/>
                         </constraints>
                     </view>
@@ -122,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="1763" y="382"/>
         </scene>
-        <!--View Controller-->
+        <!--What You Will Do-->
         <scene sceneID="NFk-4N-M2y">
             <objects>
-                <viewController id="waH-Q9-lH1" sceneMemberID="viewController">
+                <viewController title="What You Will Do" id="waH-Q9-lH1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bBg-PD-698"/>
                         <viewControllerLayoutGuide type="bottom" id="JNZ-29-B4r"/>
@@ -134,12 +119,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What You Will Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfp-78-cIX">
-                                <rect key="frame" x="234" y="20" width="132" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLm-aM-b2m">
                                 <rect key="frame" x="284" y="570" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -152,8 +131,6 @@
                         <constraints>
                             <constraint firstItem="DLm-aM-b2m" firstAttribute="centerX" secondItem="RCc-LQ-MD3" secondAttribute="centerX" id="7pR-b5-YbJ"/>
                             <constraint firstItem="JNZ-29-B4r" firstAttribute="top" secondItem="DLm-aM-b2m" secondAttribute="bottom" id="Sf4-AC-l7N"/>
-                            <constraint firstItem="xfp-78-cIX" firstAttribute="top" secondItem="bBg-PD-698" secondAttribute="bottom" id="bMT-W0-TYF"/>
-                            <constraint firstItem="xfp-78-cIX" firstAttribute="centerX" secondItem="RCc-LQ-MD3" secondAttribute="centerX" id="iMM-aa-qCV"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -161,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="2477" y="382"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Data-->
         <scene sceneID="Avu-4r-9Ng">
             <objects>
-                <viewController id="Ubu-Jb-Qu8" sceneMemberID="viewController">
+                <viewController title="Your Data" id="Ubu-Jb-Qu8" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LCl-cE-xhJ"/>
                         <viewControllerLayoutGuide type="bottom" id="rfq-iM-ebG"/>
@@ -180,17 +157,9 @@
                                     <segue destination="Eyq-Ib-OiF" kind="show" id="JwJ-a0-U63"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df6-F3-qzD">
-                                <rect key="frame" x="263" y="20" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="df6-F3-qzD" firstAttribute="top" secondItem="LCl-cE-xhJ" secondAttribute="bottom" id="bH3-1R-UzR"/>
-                            <constraint firstItem="df6-F3-qzD" firstAttribute="centerX" secondItem="wWc-Gw-i7S" secondAttribute="centerX" id="gHu-Dd-8Cm"/>
                             <constraint firstItem="Qe2-4B-2Pl" firstAttribute="centerX" secondItem="wWc-Gw-i7S" secondAttribute="centerX" id="jIb-G3-VoA"/>
                             <constraint firstItem="rfq-iM-ebG" firstAttribute="top" secondItem="Qe2-4B-2Pl" secondAttribute="bottom" id="mOl-Es-3OV"/>
                         </constraints>
@@ -198,12 +167,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yz4-a8-qLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1653" y="-370"/>
+            <point key="canvasLocation" x="1717" y="-370"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Data-->
         <scene sceneID="1sx-CQ-yFT">
             <objects>
-                <viewController id="Eyq-Ib-OiF" sceneMemberID="viewController">
+                <viewController title="Your Data" id="Eyq-Ib-OiF" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JEJ-cU-0Pn"/>
                         <viewControllerLayoutGuide type="bottom" id="gWj-Wx-2wU"/>
@@ -219,18 +188,10 @@
                                     <segue destination="wJT-cL-cTc" kind="show" id="fsZ-pQ-1FH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHg-4E-TzA">
-                                <rect key="frame" x="263" y="20" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cIn-LE-593" firstAttribute="centerX" secondItem="2pt-RA-DWG" secondAttribute="centerX" id="15P-9B-2yJ"/>
-                            <constraint firstItem="sHg-4E-TzA" firstAttribute="top" secondItem="JEJ-cU-0Pn" secondAttribute="bottom" id="EM9-aY-okq"/>
-                            <constraint firstItem="sHg-4E-TzA" firstAttribute="centerX" secondItem="2pt-RA-DWG" secondAttribute="centerX" id="KFr-OW-Lgd"/>
                             <constraint firstItem="gWj-Wx-2wU" firstAttribute="top" secondItem="cIn-LE-593" secondAttribute="bottom" id="P5p-js-qvp"/>
                         </constraints>
                     </view>
@@ -239,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="2361" y="-370"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Time-->
         <scene sceneID="AFU-Kp-M17">
             <objects>
-                <viewController id="wJT-cL-cTc" sceneMemberID="viewController">
+                <viewController title="Your Time" id="wJT-cL-cTc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zfG-Qm-ceb"/>
                         <viewControllerLayoutGuide type="bottom" id="eKK-eN-Fhg"/>
@@ -258,18 +219,10 @@
                                     <segue destination="I5v-Hz-O54" kind="show" id="6PN-8g-DgY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bk8-pg-doC">
-                                <rect key="frame" x="261" y="20" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Oc7-aH-6cj" firstAttribute="centerX" secondItem="bgG-D7-Ze4" secondAttribute="centerX" id="Cbe-qE-inK"/>
-                            <constraint firstItem="Bk8-pg-doC" firstAttribute="top" secondItem="zfG-Qm-ceb" secondAttribute="bottom" id="bFv-7P-PGa"/>
-                            <constraint firstItem="Bk8-pg-doC" firstAttribute="centerX" secondItem="bgG-D7-Ze4" secondAttribute="centerX" id="kae-4O-Osw"/>
                             <constraint firstItem="eKK-eN-Fhg" firstAttribute="top" secondItem="Oc7-aH-6cj" secondAttribute="bottom" id="pTp-R4-pWO"/>
                         </constraints>
                     </view>
@@ -278,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="3173" y="382"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Time-->
         <scene sceneID="dL4-0g-MSH">
             <objects>
-                <viewController id="I5v-Hz-O54" sceneMemberID="viewController">
+                <viewController title="Your Time" id="I5v-Hz-O54" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ryF-Cs-bUy"/>
                         <viewControllerLayoutGuide type="bottom" id="dVs-w8-jmO"/>
@@ -297,19 +250,11 @@
                                     <segue destination="S43-Ma-YXc" kind="show" id="xea-pc-z5x"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3E9-Ld-hwZ">
-                                <rect key="frame" x="261" y="20" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3E9-Ld-hwZ" firstAttribute="centerX" secondItem="4kg-jD-tEC" secondAttribute="centerX" id="JAT-de-bly"/>
                             <constraint firstItem="SxI-Hd-gEd" firstAttribute="centerX" secondItem="4kg-jD-tEC" secondAttribute="centerX" id="kgy-XK-Iaa"/>
                             <constraint firstItem="dVs-w8-jmO" firstAttribute="top" secondItem="SxI-Hd-gEd" secondAttribute="bottom" id="lBm-Mo-79e"/>
-                            <constraint firstItem="3E9-Ld-hwZ" firstAttribute="top" secondItem="ryF-Cs-bUy" secondAttribute="bottom" id="zLO-tn-Dhz"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -317,10 +262,10 @@
             </objects>
             <point key="canvasLocation" x="3889" y="382"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Consent-->
         <scene sceneID="kbq-IQ-aPt">
             <objects>
-                <viewController id="S43-Ma-YXc" sceneMemberID="viewController">
+                <viewController title="Your Consent" id="S43-Ma-YXc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PmM-O4-Dg6"/>
                         <viewControllerLayoutGuide type="bottom" id="5Xn-eh-4L1"/>
@@ -333,19 +278,11 @@
                                 <rect key="frame" x="284" y="570" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Consent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIJ-tM-ugA">
-                                <rect key="frame" x="248" y="20" width="104" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LDa-yt-0SA" firstAttribute="centerX" secondItem="mnI-SU-Vj8" secondAttribute="centerX" id="6ho-s0-EB4"/>
                             <constraint firstItem="5Xn-eh-4L1" firstAttribute="top" secondItem="LDa-yt-0SA" secondAttribute="bottom" id="aBn-sm-J6Y"/>
-                            <constraint firstItem="pIJ-tM-ugA" firstAttribute="top" secondItem="PmM-O4-Dg6" secondAttribute="bottom" id="giC-hI-SN5"/>
-                            <constraint firstItem="pIJ-tM-ugA" firstAttribute="centerX" secondItem="mnI-SU-Vj8" secondAttribute="centerX" id="jmE-DH-NqG"/>
                         </constraints>
                     </view>
                 </viewController>
