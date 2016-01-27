@@ -15,6 +15,7 @@
 		8A2589281C579801002B6CA5 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2589271C579801002B6CA5 /* CheckBox.swift */; };
 		8A25892A1C57AAE3002B6CA5 /* ViewControllerAgePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2589291C57AAE3002B6CA5 /* ViewControllerAgePicker.swift */; };
 		8A25892C1C57C054002B6CA5 /* ViewControllerConsent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25892B1C57C054002B6CA5 /* ViewControllerConsent.swift */; };
+		8A25892E1C58FE9A002B6CA5 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A25892D1C58FE9A002B6CA5 /* ViewControllerHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8A2589271C579801002B6CA5 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		8A2589291C57AAE3002B6CA5 /* ViewControllerAgePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAgePicker.swift; sourceTree = "<group>"; };
 		8A25892B1C57C054002B6CA5 /* ViewControllerConsent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerConsent.swift; sourceTree = "<group>"; };
+		8A25892D1C58FE9A002B6CA5 /* ViewControllerHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				8A2589151C56813C002B6CA5 /* ViewController.swift */,
 				8A2589291C57AAE3002B6CA5 /* ViewControllerAgePicker.swift */,
 				8A2589171C56813C002B6CA5 /* Main.storyboard */,
+				8A25892D1C58FE9A002B6CA5 /* ViewControllerHome.swift */,
 				8A2589271C579801002B6CA5 /* CheckBox.swift */,
 				8A25892B1C57C054002B6CA5 /* ViewControllerConsent.swift */,
 				8A25891A1C56813C002B6CA5 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A2589281C579801002B6CA5 /* CheckBox.swift in Sources */,
+				8A25892E1C58FE9A002B6CA5 /* ViewControllerHome.swift in Sources */,
 				8A25892A1C57AAE3002B6CA5 /* ViewControllerAgePicker.swift in Sources */,
 				8A2589161C56813C002B6CA5 /* ViewController.swift in Sources */,
 				8A25892C1C57C054002B6CA5 /* ViewControllerConsent.swift in Sources */,

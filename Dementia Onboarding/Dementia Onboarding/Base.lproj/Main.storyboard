@@ -8,7 +8,7 @@
         <!--Dementia Citizens-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Dementia Citizens" id="BYZ-38-t0r" customClass="ViewController" customModule="Dementia_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dementia Citizens" id="BYZ-38-t0r" customClass="ViewControllerHome" customModule="Dementia_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Dementia                                      Citizens" translatesAutoresizingMaskIntoConstraints="NO" id="KbL-lH-oZe">
-                                <rect key="frame" x="194" y="78" width="212" height="128"/>
+                                <rect key="frame" x="194" y="65" width="212" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.42553336199523223" green="0.43556358618484847" blue="0.43427703411573665" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
@@ -43,6 +43,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YRT-kD-xjD" secondAttribute="bottom" constant="55" id="Agk-EB-AcI"/>
+                            <constraint firstItem="KbL-lH-oZe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Teq-tC-COy"/>
                             <constraint firstItem="YRT-kD-xjD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WHk-wx-ugh"/>
                             <constraint firstItem="KbL-lH-oZe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMa-0k-P3w"/>
                             <constraint firstItem="KbL-lH-oZe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nr2-d3-P4r"/>
@@ -51,6 +52,11 @@
                     <navigationItem key="navigationItem" id="Yt8-Ku-ADW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="elU-7V-DQ0">
+                    <connections>
+                        <action selector="handleSwipe:" destination="BYZ-38-t0r" id="Voj-nu-mBC"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="961" y="510"/>
         </scene>
@@ -434,7 +440,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your first name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDT-cQ-aWU">
                                 <rect key="frame" x="208" y="124" width="185" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tap to Type...." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v93-zd-rQM">
@@ -483,7 +489,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What age are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsD-lI-vUn">
                                 <rect key="frame" x="229" y="152" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
