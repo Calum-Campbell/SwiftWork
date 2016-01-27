@@ -97,3 +97,9 @@ class ViewControllerAgePicker: UIViewController, UIPickerViewDelegate, UIPickerV
 1. logos and icons for home layout added
 <br>
 <i>source: https://www.youtube.com/watch?v=m-zRNghYWkA&list=PL6gx4Cwl9DGDgp7nGSUnnXihbTLFZJ79B&index=7</i>
+
+### Working on getting front page slider
+1. Unable to position image correctly with constraints without images stretching too much, so have positioned it for my environment (iPhone 42)
+2. Use image field on home screen with swipe gester connected
+3. Created new homescree view controller.
+4. 
