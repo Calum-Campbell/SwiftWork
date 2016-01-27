@@ -101,5 +101,5 @@ class ViewControllerAgePicker: UIViewController, UIPickerViewDelegate, UIPickerV
 ### Working on getting front page slider
 1. Unable to position image correctly with constraints without images stretching too much, so have positioned it for my environment (iPhone 42)
 2. Use image field on home screen with swipe gester connected
-3. Created new homescree view controller.
+3. Created new homescreen view controller.
 4. 
